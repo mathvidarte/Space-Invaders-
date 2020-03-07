@@ -17,9 +17,9 @@ public abstract class Character {
 		this.app = app;
 	}
 	
-	public abstract void moveRight ();
+	//public abstract void moveRight ();
 	
-	public abstract void moveLeft ();
+	//public abstract void moveLeft ();
 	
 	public abstract void draw ();
 	

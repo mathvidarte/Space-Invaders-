@@ -9,18 +9,13 @@ public class Invasor extends Character {
 	
 	
 	
-	public void moveRight () {
+	public void move () {
 		this.posX += this.vel;
 		
 		if (this.posX > 470) {
 			this.posY += 30;
 			this.vel *= -1;
-		}
-	}
-	
-	public void moveLeft () {
-		
-		if (this.posX < 0) {
+		} else if (this.posX < 0) {
 			this.posY += 30;
 			this.vel *= -1;
 		}
@@ -29,7 +24,7 @@ public class Invasor extends Character {
 	public void draw () {
 		app.noStroke();
 		app.fill(0);
-		app.rect(this.posX, this.posY, this.tam, this.tam);
+		app.rect(this.posX, this.posY,20,20);
 	}
 	
 	
