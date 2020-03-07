@@ -14,6 +14,7 @@ public abstract class Character {
 		this.posX = posX;
 		this.posY = posY;
 		this.tam = 50;
+		this.vel = 2;
 		this.app = app;
 	}
 	
