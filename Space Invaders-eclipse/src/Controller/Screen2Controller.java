@@ -20,4 +20,8 @@ public class Screen2Controller {
 	public void runController () {
 		myHero.run();
 	}
+	
+	public void moveController () {
+		myHero.moveHero();
+	}
 }

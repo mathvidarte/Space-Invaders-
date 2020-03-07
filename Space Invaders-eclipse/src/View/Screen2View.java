@@ -17,5 +17,9 @@ public class Screen2View {
 	public void runView () {
 		theHero.runController();
 	}
+	
+	public void moveView () {
+		theHero.moveController();
+	}
 
 }

@@ -21,14 +21,14 @@ public class Hero extends Character {
 	
 	public void moveRight () {
 		if (this.posX > 0 || this.posY < 450) {
-			this.posX += this.vel;
+			this.posX += this.vel+5;
 		}
 		
 	}
 	
 	public void moveLeft () {
 		if (this.posX > 0 || this.posY < 450) {
-			this.posX -= this.vel;
+			this.posX -= this.vel+5;
 		}
 	
 	}

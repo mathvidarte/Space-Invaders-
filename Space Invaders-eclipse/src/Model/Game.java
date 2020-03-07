@@ -15,7 +15,7 @@ public Game (PApplet app) {
 	
 	invasors = new Invasor [10];
 	for (int i = 0; i < 10; i++) {
-		invasors[i] = new Invasor (80 * i, 50, app);
+		invasors[i] = new Invasor (50 * i, 50, app);
 	}
 	
 }
@@ -26,8 +26,12 @@ public void run() {
 	for (int i = 0; i < 10; i++) {
 		invasors[i].draw();
 		invasors[i].move();
-		//invasors[i].moveRight();
+		
 	}
+}
+
+public void moveHero () {
+	h.keyPressed();
 }
 
 }

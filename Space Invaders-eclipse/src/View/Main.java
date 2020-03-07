@@ -28,7 +28,7 @@ public class Main extends PApplet {
 	}
 	
 	public void keyPressed () {
-		
+		show.moveView();
 	}
 	
 	public void mousePressed () {
