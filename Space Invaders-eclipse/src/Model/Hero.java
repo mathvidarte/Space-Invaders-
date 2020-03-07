@@ -8,26 +8,16 @@ import java.util.ArrayList;
 
 import processing.core.PApplet;
 
-public class Hero {
-	int posX;
-	int posY;
-	int vel;
-	int tam;
-	int life;
-	PApplet app;
-	
-	ArrayList <Projectile> projectiles;
-	
+public class Hero extends Character {
 	public Hero (int posX, int posY, PApplet app) {
-		this.posX = posX;
-		this.posY = posY;
-		this.vel = 2;
-		this.tam = 50;
-		this.life = 3;
-		this.app = app;
-		projectiles = new ArrayList <>();
-		
+		super (posX, posY, app);
 	}
+	
+	ArrayList <Projectile> projectiles = new ArrayList <>();
+	
+	
+		
+	
 	
 	public void moveRight () {
 		if (this.posX > 0 || this.posY < 450) {

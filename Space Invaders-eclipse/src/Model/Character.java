@@ -2,36 +2,26 @@ package Model;
 
 import processing.core.PApplet;
 
-public class Invasor extends Character {
-	public Invasor (int posX, int posY, PApplet app) {
-		super (posX, posY, app);
+public abstract class Character {
+	int posX;
+	int posY;
+	int tam;
+	int life;
+	int vel;
+	PApplet app;
+	
+	public Character (int posX, int posY, PApplet app) {
+		this.posX = posX;
+		this.posY = posY;
+		this.tam = 50;
+		this.app = app;
 	}
 	
+	public abstract void moveRight ();
 	
+	public abstract void moveLeft ();
 	
-	public void moveRight () {
-		this.posX += this.vel;
-		
-		if (this.posX > 470) {
-			this.posY += 30;
-			this.vel *= -1;
-		}
-	}
-	
-	public void moveLeft () {
-		
-		if (this.posX < 0) {
-			this.posY += 30;
-			this.vel *= -1;
-		}
-	}
-	
-	public void draw () {
-		app.noStroke();
-		app.fill(0);
-		app.rect(this.posX, this.posY, this.tam, this.tam);
-	}
-	
+	public abstract void draw ();
 	
 	//Getters and Setters
 
@@ -74,6 +64,7 @@ public class Invasor extends Character {
 	public void setApp(PApplet app) {
 		this.app = app;
 	}
+	
 	
 	
 
