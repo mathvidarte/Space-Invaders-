@@ -55,7 +55,7 @@ public class Hero extends Character {
 	}
 	
 	public void shoot () {
-		Projectile p = new Projectile (this.posX, this.posY,app);
+		Projectile p = new Projectile (this.posX + 25, this.posY,app);
 		projectiles.add(p);
 	}
 	
